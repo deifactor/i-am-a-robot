@@ -1,0 +1,11 @@
+{
+  "name": "I am a Robot",
+  "version": "1.0",
+  "description": "For the robots tired of lying on reCAPTCHA",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "matches": ["https://www.google.com/recaptcha/api2/anchor*"],
+    "js": ["robotify.js"],
+    "all_frames": true
+  }]
+}
